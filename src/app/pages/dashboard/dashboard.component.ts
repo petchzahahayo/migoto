@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { ImageModule } from 'primeng/image';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [TabMenuModule],
+  imports: [TabMenuModule,ImageModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
