@@ -17,8 +17,34 @@
         <li (click)="goto('contact')"><a>ติดต่อเรา</a></li>
       </ul>
       <label for="menu-btn" class="btn menu-btn">
-        <i class="pi pi-bars"></i>
+        <i (click)="sidebarVisible = true" class="pi pi-bars"></i>
       </label>
     </div>
   </nav>
 </div>
+
+<p-sidebar #sidebarRef [(visible)]="sidebarVisible">
+  <ng-template pTemplate="headless">
+    <div class="flex flex-column h-full">
+      <div class="overflow-y-auto">
+        <ul class="list-none p-3 m-0">
+          <li (click)="goto('dashboard')">
+            <div class="sideMenu">
+              <a>หน้าแรก</a>
+            </div>
+          </li>
+          <li (click)="goto('product')">
+            <div class="sideMenu">
+              <a>สินค้า</a>
+            </div>
+          </li>
+          <li (click)="goto('contact')">
+            <div class="sideMenu">
+              <a>ติดต่อเรา</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </ng-template>
+</p-sidebar>
