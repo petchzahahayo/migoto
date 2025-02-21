@@ -1,0 +1,30 @@
+<div class="pages-container">
+  <div class="content flex flex-column align-items-center">
+    <ng-container *ngFor="let item of listContact">
+      <div class="flex gap-4 mb-3">
+        <div class="icon">
+          <img [src]="item.pathImg" alt="Image" width="50px" height="50px" />
+        </div>
+        <div class="detail">
+          <div class="text-lg mb-1">{{ item.title }}</div>
+          <div
+            [ngClass]="{
+              link: item.link
+            }"
+            (click)="goto(item.link, item.url)"
+          >
+            {{ item.description }}
+            <div *ngIf="item.title === 'Line'">
+              <img
+                src="../../../assets/img/qrLine.png"
+                alt="qrLine"
+                width="150px"
+                height="150px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

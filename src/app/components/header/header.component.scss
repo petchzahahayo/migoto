@@ -6,6 +6,7 @@ nav {
     left: 0;
     right: 0;
     background: #4663ac;
+    // background: #4663ac;
   }
   nav .wrapper {
     position: relative;
@@ -44,7 +45,7 @@ nav {
     transition: all 0.3s ease;
   }
   .nav-links li a:hover {
-    background: #3a3b3c;
+    background: inherit;
   }
   .nav-links .mobile-item {
     display: none;
@@ -114,3 +115,5 @@ nav {
   nav input {
     display: none;
   }
+
+  
