@@ -3,7 +3,12 @@
     <ng-container *ngFor="let item of listContact">
       <div class="flex gap-4 mb-3">
         <div class="icon">
-          <img [src]="item.pathImg" alt="Image" width="50px" height="50px" />
+          <img
+            [src]="item.pathImg"
+            alt="Image"
+            [width]="item.width"
+            [height]="item.height"
+          />
         </div>
         <div class="detail">
           <div class="text-lg mb-1">{{ item.title }}</div>

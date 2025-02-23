@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [],
+  imports: [CardModule],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss'
 })

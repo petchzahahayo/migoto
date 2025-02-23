@@ -16,6 +16,7 @@ export class HeaderComponent {
 
   goto(path: string) {
     // Navigate silently to /view
+    this.sidebarVisible = false;
     this.router.navigate([`/${path}`], { skipLocationChange: true });
   }
 }

@@ -17,16 +17,25 @@ export class ContactComponent implements OnInit {
       pathImg: '../../../assets/img/google-maps.png',
       description:
         '368,370 ซอยเทอดไทย19 แขวงบางยี่เรือ เขตธนบุรี กรุงเทพมหานคร',
+      link: false,
+      width :'50',
+      height:'50'
     },
     {
       title: 'โทรศัพท์',
       pathImg: '../../../assets/img/phone-call.png',
       description: '061-746-5363',
+      link: false,
+      width :'50',
+      height:'50'
     },
     {
       title: 'Email',
       pathImg: '../../../assets/img/mail.png',
-      description: 'migotoramen2022@gmail.com',
+      description: 'migoto_ramen@outlook.com',
+      link: false,
+      width :'50',
+      height:'50'
     },
     {
       title: 'Facebook',
@@ -34,6 +43,8 @@ export class ContactComponent implements OnInit {
       description: 'www.facebook.com/migotoramen2022',
       url: 'https://www.facebook.com/migotoramen2022',
       link: true,
+      width :'50',
+      height:'50'
     },
     {
       title: 'Shopee',
@@ -41,11 +52,16 @@ export class ContactComponent implements OnInit {
       description: 'www.shopee.co.th/migoto.2022',
       url: 'https://shopee.co.th/migoto.2022',
       link: true,
+      width :'55',
+      height:'55'
     },
     {
       title: 'Line',
       pathImg: '../../../assets/img/line.png',
       description: '@migotoramen',
+      link: false,
+      width :'50',
+      height:'50'
     },
   ];
 
